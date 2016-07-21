@@ -14,7 +14,8 @@ _time check in -> 8:30pm  _
     ~~7.  launch onto github pages~~ (did this first )  
    _time check in( going on a walk) -> 8:52pm_  
 
-    8.  tell EVERYONE what you did... or you might as well have not done it at all.
+    8. add a few more content and go home
+    9.  tell EVERYONE what you did... or you might as well have not done it at all.
 
 ended ->    
 hosted on ->  burneyburney.github.io  
