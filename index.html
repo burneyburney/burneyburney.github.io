@@ -26,10 +26,10 @@
         <div class="col-md-6">
           <div class="thumbnail">
             <!-- <img src="img/red-sox-fig.jpg"> -->
-            <p class="img"> {{ product.img }} </p>
-            <p class="title">{{product.name | uppercase}} </p>
-            <p class="price">{{product.price | currency}} </p>
-            <p class="date">{{product.productDate | date}} </p>
+            <img ng-src="{{ product[0].legoImage }}" alt="legoImage is here" />
+            <p class="title">{{product[0].name | uppercase}} </p>
+            <p class="price">{{product[0].price | currency}} </p>
+            <p class="date">{{product[0].productDate | date}} </p>
 
           </div>
         </div>
