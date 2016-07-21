@@ -18,4 +18,4 @@ _time check in -> 8:30pm  _
     9.  tell EVERYONE what you did... or you might as well have not done it at all.
 
 ended ->    
-hosted on ->  https://www.burneyburney.github.io  
+hosted on ->  https://burneyburney.github.io  
