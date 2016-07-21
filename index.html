@@ -8,8 +8,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
     <!--  css -->
     <link href="css/main.css" rel="stylesheet" />
-
   </head>
+
   <body ng-app="myApp">
     <div class="header">
       <div class="container">
@@ -25,10 +25,12 @@
 
         <div class="col-md-6">
           <div class="thumbnail">
-            <img src="img/red-sox-fig.jpg">
+            <!-- <img src="img/red-sox-fig.jpg"> -->
+            <p class="img"> {{ product.img }} </p>
             <p class="title">{{product.name | uppercase}} </p>
             <p class="price">{{product.price | currency}} </p>
-            <p class="date">{{product.pubdate | date}} </p>
+            <p class="date">{{product.productDate | date}} </p>
+
           </div>
         </div>
 
