@@ -24,4 +24,4 @@ What I plan to do -> Build upon these skills to make something cool. like a word
 What was the Biggest Challenge -> Remembering how to communicate with the controller, documenting my progress constantly and naming things.
 
 _check commit history for random time logs_    
-ended ->    
+ended ->    10:06pm
