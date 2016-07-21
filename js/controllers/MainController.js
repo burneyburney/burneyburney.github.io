@@ -5,7 +5,7 @@ app.controller('MainController',[
     $scope.product =[{
         name: 'RED SOX GIVEAWAY',
         price: 19,
-        productDate: new Date('1999', '1', '1'),
+        productDate: new Date('1999', '00', '01'),
         legoImage: 'http://images.mentalfloss.com/sites/default/files/styles/insert_main_wide_image/public/red-sox-fig.jpg'
     }];
 }]);

@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:500,300,700,400");
 html, body {
  margin: 0;
  padding: 0;
@@ -14,7 +16,7 @@ html, body {
 }
 
 .header h1 {
-   display: inline-block;
+   /*display: inline-block;*/
 }
 
 .main {
@@ -49,9 +51,10 @@ html, body {
 }
 
 .thumbnail img {
-   margin-top: 10px;
+   /*margin-top: calc(100% - 1rem );*/
  margin-bottom: 30px;
  max-width: 100%;
+ border-radius: 5%;
 }
 
 .title,
@@ -129,7 +132,7 @@ html, body {
 
 
 .container {
-  padding-right: 30px;
+  padding-right: auto;
   padding-left: 30px;
   margin-right: auto;
   margin-left: auto;
