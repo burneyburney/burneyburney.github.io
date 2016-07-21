@@ -13,7 +13,7 @@
   <body ng-app="myApp">
     <div class="header">
       <div class="container">
-        <h1>Buy our LEGO's please!</h1>
+        <h1>Buy Rare LEGO's!</h1>
       </div>
     </div>
 
@@ -23,15 +23,14 @@
         <h1>{{ product[0].name }}</h1>
         <h2>{{ promo }}</h2>
 
-        <div class="col-md-6">
+
           <div class="thumbnail">
-            <!-- <img src="img/red-sox-fig.jpg"> -->
-            <img ng-src="{{ product[0].legoImage }}" alt="legoImage is here" />
-            <!-- <p class="title">{{product[0].name | uppercase}} </p> -->
-            <p class="price">{{product[0].price | currency}} </p>
-            <p class="date"> Released: {{product[0].productDate | date}} </p>
+              <img ng-src="{{ product[0].legoImage }}" alt="legoImage is here" />
+              <p class="price">{{product[0].price | currency}} </p>
+              <p class="date"> Released: {{product[0].productDate | date}} </p>
+              </div>
           </div>
-        </div>
+
 
       </div>
     </div>
@@ -39,8 +38,8 @@
     <div class="footer">
       <div class="container">
         <h2>Application Compatible on</h2>
-        <img src="https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/app-store.png" width="120px" />
-        <img src="https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/google-play.png" width="110px" />
+        <img src="https://heavyeditorial.files.wordpress.com/2015/10/applevswindows.jpg?quality=65&strip=all" />
+        <img src="https://image.freepik.com/free-vector/android-boot-logo_634639.jpg" />
       </div>
     </div>
 
