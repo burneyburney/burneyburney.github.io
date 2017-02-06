@@ -1,80 +1,112 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>For sale:</title>
-    <!--  angular CDN-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-    <link href="css/main.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--  reset style -->
+    <link rel="stylesheet" type="text/css" href="public/css/normalize.css" />
+    <!--  Responsive Grid-->
+    <link rel="stylesheet" type="text/css" href="public/css/grid.css" />
+    <!--  main style sheet-->
+    <link rel="stylesheet" type="text/css" href="public/css/main.css" />
+    <title>Document</title>
 </head>
-
-<body ng-app="myApp">
-    <div class="header">
-        <div class="container">
-            <h1>Buy Rare LEGO's!</h1>
-        </div>
-    </div>
-
-<!--  Hardcoding items until i learn ng-repeat better, added to issues tracker 10:01pm-->
-    <div class="main" ng-controller="MainController">
-        <div class="container">
-            <h1>{{ product[0].name }}</h1>
-            <h2>{{ promo }}</h2>
-
-            <div class="thumbnail">
-                <img ng-src="{{ product[0].legoImage }}" alt="legoImage is here" />
-                <p class="price">{{product[0].price | currency}} </p>
-                <p class="date"> Released: {{product[0].productDate | date}} </p>
+<body>
+    <!--  NAV -->
+    <nav class="navbar">
+        <div class="row">
+            <div class="eight columns">
+                <div class="homepage-logo"><span>LOGO</span></div>
             </div>
+            <div class="links align-center">
+                <a href="#" class="homepage-faq href">FAQ</a>
+                <a href="#" class="homepage-generic-schedule href">Generic Schedule</a>
+                <a href="#" class="homepage-generic-schedule href">Generic Text</a>
+            </div>
+        </div>
+    </nav>
+    <!--  END NAV -->
 
-        <h1>{{ product[1].name }}</h1>
-        <div class="thumbnail">
-            <img ng-src="{{ product[1].legoImage }}" alt="legoImage is here" />
-            <p class="price">{{product[1].price | currency}} </p>
-            <p class="date"> Released: {{product[1].productDate | date}} </p>
+    <!--  container to center page-->
+    <div class="container">
+
+        <div class="row">
+            <div class="twelve columns">
+                <div class="hero-text">
+                    <img src="public/img/information.png" alt="information" class="information-icon" draggable="false">
+                    <h1>Text Everyday, Everything, Everywhere <br>and your generic text fully-funded Text</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="twelve columns">
+                <form class="homepage-form" action="#">
+                    <input type="email" class="homepage-email-address" placeholder="Email address">
+                    <select>
+                        <option class ="remove-option" value="">Select your District</option>
+                        <option class="option" value="one">District One</option>
+                        <option class="option" value="two">District Two</option>
+                        <option class="option" value="three">District Three</option>
+                        <option class="option" value="four">District Four</option>
+                        <option class="option" value="five">District Five</option>
+                        <option class="option" value="six">District Six</option>
+                        <option class="option" value="seven">District Seven</option>
+                        <option class="option" value="eight">District Eight</option>
+                        <option class="option" value="nine">District Nine</option>
+                        <option class="option" value="ten">District Ten</option>
+                    </select>
+                    <input type="submit" class="form-submit" value="GO">
+                </form>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="twelve columns align-center">
+
+                <label><input type="checkbox" name="updates" class="homepage-checkbox" value="updates">
+                    <span class="checkbox-text">I'd like to receive updates from Generic Text about this program </label></span>
+            </div>
+        </div>
+
+        <div class="statistics-wrapper">
+
+            <div class="row pledges-wrapper">
+                <div class="six columns">
+                    There are currently <br> 1423 <br> Pledges from the 10 <br> Districts of City, ST.
+                </div>
+
+                <div class="six columns">
+                    <section class="leaderboard-statistics">
+                        <div class="homepage-leaderboard">leaderboard</div>
+                        <ul class="leaderboard">
+                            <li class="district-wrapper"><div class="district">District 1</div> <span class="bar1"></span> 112 Pledges</li>
+                            <li class="district-wrapper">District 2 <span class="bar2"></span> 98 Pledges</li>
+                            <li class="district-wrapper">District 3 <span class="bar3"></span> 119 Pledges</li>
+                            <li class="district-wrapper">District 4 <span class="bar4"></span> 126 Pledges</li>
+                            <li class="district-wrapper">District 5 <span class="bar5"></span> 129 Pledges</li>
+                            <li class="district-wrapper">District 6 <span class="bar6"></span> 44 Pledges</li>
+                            <li class="district-wrapper">District 7 <span class="bar7"></span> 118 Pledges</li>
+                            <li class="district-wrapper">District 8 <span class="bar8"></span> 125 Pledges</li>
+                            <li class="district-wrapper">District 9 <span class="bar9"></span> 101 Pledges</li>
+                            <li class="district-wrapper">District 10 <span class="bar10"></span> 27 Pledges</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
         </div>
     </div>
-
-    </div>
-
-    <!--  DOESNT WORK add to issues tracker 10:01pm -->
-
-     <h1>{{ product[2].name }}</h1>
-    <div class="thumbnail">
-        <img ng-src="{{ product[2].legoImage }}" alt="legoImage is here" />
-        <p class="price">{{product[2].price | currency}} </p>
-        <p class="date"> Released: {{product[2].productDate | date}} </p>
-    </div>
-    </div> 
-     <h1>{{ product[3].name }}</h1>
-    <div class="thumbnail">
-        <img ng-src="{{ product[3].legoImage }}" alt="legoImage is here" />
-        <p class="price">{{product[3].price | currency}} </p>
-        <p class="date"> Released: {{product[3].productDate | date}} </p>
-    </div>
-    </div>
-    <h1>{{ product[4].name }}</h1>
-    <div class="thumbnail">
-        <img ng-src="{{ product[4].legoImage }}" alt="legoImage is here" />
-        <p class="price">{{product[4].price | currency}} </p>
-        <p class="date"> Released: {{product[4].productDate | date}} </p>
-    </div>
-    </div>
-
-    <div class="footer">
-        <div class="container">
-            <h2> Compatible on</h2>
-            <img src="https://heavyeditorial.files.wordpress.com/2015/10/applevswindows.jpg?quality=65&strip=all" />
-            <img src="https://image.freepik.com/free-vector/android-boot-logo_634639.jpg" />
-            <h4> because its a web browser...</h4>
+    <!--  end CONTAINER-->
+    <!--  FOOTER start-->
+    <div class="row">
+        <div class="twelve columns">
+            <footer>
+                &copy; 2015 Generic Text
+            </footer>
         </div>
+        <!--  FOOTER end-->
     </div>
-
-
-    <!-- Module -->
-    <script src="js/app.js"></script>
-    <!-- Controller -->
-    <script src="js/controllers/MainController.js"></script>
 </body>
-
 </html>
