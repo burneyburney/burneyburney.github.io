@@ -1,0 +1,9 @@
+{
+  "name": "burney",
+  "version": "1.0",
+  "description": "testRun",
+  "main": "index.js",
+  "repository": "https://github.com/burneyburney/burneyburney.github.io.git",
+  "author": "burney",
+  "license": "MIT"
+}
